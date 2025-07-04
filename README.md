@@ -29,6 +29,6 @@ Built with [Next.js](https://nextjs.org) + [Supabase](https://supabase.com).
 Clone the repo and install dependencies:
 
 ```bash
-git clone https://github.com/ykDhiraj/confesso.git
+git clone https://github.com/ykDhiRaj/confesso.git
 cd confesso
 npm install
