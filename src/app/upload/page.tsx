@@ -107,6 +107,7 @@ export default function Page() {
       },
     });
   } catch (err) {
+    console.log(err)
     toast.error("Error uploading", {
       style: {
         background: "#1a1a1a",
@@ -304,7 +305,7 @@ export default function Page() {
             </div>
 
             <p className="text-amber-200/70 text-sm mt-3 italic">
-              Keep this code safe — it's your only way to remove this confession.
+              Keep this code safe — it&apos;s your only way to remove this confession.
               Otherwise, a digital footprint will be left behind.
             </p>
           </div>

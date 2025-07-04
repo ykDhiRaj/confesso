@@ -112,7 +112,7 @@ function SearchPage() {
     onClick={handlePopularClick}
     className="text-black bg-white px-4 py-2 rounded-full hover:bg-[#923C3E] transition w-full sm:w-auto"
   >
-    See today's popular
+    See today&apos;s popular
   </button>
 
   <div className="relative flex-1 w-full">
