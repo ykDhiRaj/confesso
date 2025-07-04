@@ -178,6 +178,7 @@ useEffect(() => {
         },
         body: JSON.stringify({ id: id }),
       });
+      console.log(res)
     }
   };
 
