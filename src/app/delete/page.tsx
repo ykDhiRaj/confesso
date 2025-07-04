@@ -5,7 +5,7 @@ import axios from 'axios'
 import { Trash2, Lock, AlertTriangle } from 'lucide-react'
 import toast from 'react-hot-toast'
 
-function page() {
+function Page() {
 
   const [deleteCode, setDeleteCode]  = useState('')
 
@@ -171,4 +171,4 @@ function page() {
   )
 }
 
-export default page
+export default Page

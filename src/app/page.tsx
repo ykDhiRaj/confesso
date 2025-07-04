@@ -49,7 +49,7 @@ type Confession = {
   created_at?: string;
 };
 
-function page() {
+function Page() {
   const [confessions, setConfessions] = useState<Confession[]>([]);
   const [loading, setLoading] = useState(true);
   const [playingId, setPlayingId] = useState<string | null>(null);
@@ -467,4 +467,4 @@ useEffect(() => {
   );
 }
 
-export default page;
+export default Page;
