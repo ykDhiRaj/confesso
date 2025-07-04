@@ -2,7 +2,7 @@
 
 import { useState, useRef } from "react";
 import axios from "axios";
-import { Mic, MicOff, Upload, Lock, Volume2, Copy } from "lucide-react";
+import { Mic, MicOff, Upload, Lock, Copy } from "lucide-react";
 import toast from "react-hot-toast";
 
 export default function Page() {

@@ -15,19 +15,22 @@ function page() {
       data: { deletionCode: deleteCode },
     });
 
-    toast.success("Confession deleted successfully", {
-      style: {
-        background: "#1f2937",
-        color: "#fff",
-        border: "1px solid #10b981",
-      },
-      iconTheme: {
-        primary: "#10b981",
-        secondary: "#1f2937",
-      },
-    });
+    if(res.status == 200){
+      toast.success("Confession deleted successfully", {
+        style: {
+          background: "#1f2937",
+          color: "#fff",
+          border: "1px solid #10b981",
+        },
+        iconTheme: {
+          primary: "#10b981",
+          secondary: "#1f2937",
+        },
+      });
+    }
+
     setDeleteCode('');
-  } catch (error: any) {
+  } catch (error) {
     if (axios.isAxiosError(error)) {
       if (error.response?.status === 404) {
         toast.error("Invalid code", {

@@ -9,7 +9,7 @@ export async function POST(req:Request){
             return NextResponse.json({ error: 'Confession ID is required' }, { status: 400 });
         }
 
-        const {data, error} = await supabaseAdmin.rpc('increment_daily_plays', { confession_id: id })
+        const {error} = await supabaseAdmin.rpc('increment_daily_plays', { confession_id: id })
 
         if(error){
             return NextResponse.json(error.message)

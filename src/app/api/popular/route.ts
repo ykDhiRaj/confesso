@@ -1,7 +1,7 @@
 import { supabaseAdmin } from "@/lib/supabase";
 import { NextRequest, NextResponse } from "next/server";
 
-export async function GET(req: NextRequest) {
+export async function GET() {
     const { data, error } = await supabaseAdmin
         .from('confessions')
         .select('*')

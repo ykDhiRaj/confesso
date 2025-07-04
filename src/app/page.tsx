@@ -6,13 +6,10 @@ import {
   Pause,
   Volume2,
   VolumeX,
-  Heart,
   MessageCircle,
-  Eye,
   Clock,
   Mic,
 } from "lucide-react";
-import toast from "react-hot-toast";
 
 const formatDate = (dateStr: string) => {
   const date = new Date(dateStr);

@@ -36,7 +36,7 @@ export async function POST(req: Request) {
       return NextResponse.json({ error: uploadError.message }, { status: 500 });
     }
 
-    const { error: dbError, data } = await supabaseAdmin
+    const { error: dbError } = await supabaseAdmin
       .from('confessions')
       .insert({
         audio_url: `confessions/${fileName}`,
@@ -53,7 +53,7 @@ export async function POST(req: Request) {
     }
 
     return NextResponse.json({ message: 'Confession uploaded', deletionCode });
-  } catch (e: any) {
+  } catch (e) {
     console.error('❌ Unexpected error:', e);
     return NextResponse.json({ error: 'Internal server error' }, { status: 500 });
   }
