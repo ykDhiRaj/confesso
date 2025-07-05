@@ -3,6 +3,7 @@
 Confesso is an anonymous voice confession platform where users can record, upload, and listen to confessions. Users can explore trending confessions, interact using emoji reactions, and even delete their own submissions via a unique deletion code — all without creating an account.
 
 Built with [Next.js](https://nextjs.org) + [Supabase](https://supabase.com).
+Live: [Confesso](https://confesso-six.vercel.app)
 
 ---
 
